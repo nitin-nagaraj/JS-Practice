@@ -37,19 +37,21 @@ console.log(typeof country);
 
 const finland = 6000000;
 country = "india";
-let newPopulation = (population / 2);
+let newPopulation = population / 2;
 console.log(newPopulation);
 
 const belgium = 6000000;
 
-const description = console.log("Population of " + country + " if it is reduced by half is " + newPopulation);
+const description = console.log(
+  "Population of " + country + " if it is reduced by half is " + newPopulation
+);
 
-newPopulation+=1;
+newPopulation += 1;
 console.log(newPopulation);
 
-console.log(finland<newPopulation);
-console.log(newPopulation>population);
-console.log(finland==belgium);
+console.log(finland < newPopulation);
+console.log(newPopulation > population);
+console.log(finland == belgium);
 
 // //  //// //  //// //  //// //  //// //  //// //  //// //  //
 
@@ -60,26 +62,30 @@ const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
 
-const bmiMark  = massMark / (heightMark**2) ;
+const bmiMark = massMark / heightMark ** 2;
 console.log(bmiMark);
 
-const bmiJohn  = massJohn / (heightJohn*heightJohn) ;
+const bmiJohn = massJohn / (heightJohn * heightJohn);
 console.log(bmiJohn);
 
-const markHigherBMI = (bmiMark > bmiJohn);
+const markHigherBMI = bmiMark > bmiJohn;
 console.log(markHigherBMI);
 
 
-
-
-
-
-
-
-
-
-
-
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
 
 // LECTURE: Strings and Template Literals
+
+const newDescription = `Population of ${country} ${finland} is the same as ${belgium}`;
+console.log(newDescription);
+
+console.log(
+  `BMI of Mark which is ${bmiMark} is greather than that of ${bmiJohn}`
+);
+console.log(`Weight difference of mark and john is ${massJohn - massMark}`);
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+
+// LECTURE: Taking Decisions: if / else Statements
+
 
