@@ -34,3 +34,52 @@ console.log(typeof country);
 
 // //  //// //  //// //  //// //  //// //  //// //  //// //  //
 // LECTURE: Basic Operators
+
+const finland = 6000000;
+country = "india";
+let newPopulation = (population / 2);
+console.log(newPopulation);
+
+const belgium = 6000000;
+
+const description = console.log("Population of " + country + " if it is reduced by half is " + newPopulation);
+
+newPopulation+=1;
+console.log(newPopulation);
+
+console.log(finland<newPopulation);
+console.log(newPopulation>population);
+console.log(finland==belgium);
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+
+// Coding Challenge #1
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const bmiMark  = massMark / (heightMark**2) ;
+console.log(bmiMark);
+
+const bmiJohn  = massJohn / (heightJohn*heightJohn) ;
+console.log(bmiJohn);
+
+const markHigherBMI = (bmiMark > bmiJohn);
+console.log(markHigherBMI);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LECTURE: Strings and Template Literals
+
