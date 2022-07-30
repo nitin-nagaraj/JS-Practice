@@ -3,6 +3,7 @@
 let country = "india";
 let continent = "asia";
 let population = 10000000000;
+population>=10000000000 ? console.log("Wowwwwwwww") : console.log("Oops");
 
 console.log(
   "Population of " +
@@ -154,17 +155,7 @@ if (age !== 32) {
 // //  //// //  //// //  //// //  //// //  //// //  //// //  //
 // LECTURE: Logical Operators
 
-// Let'ssaySarahislookingforanewcountrytolivein.Shewantstoliveina
-// country that speaks english, has less than 50 million people and is not an
-// island.
-// 3. WriteanifstatementtohelpSarahfigureoutifyourcountryisrightforher.
-// You will need to write a condition that accounts for all of Sarah's criteria. Take
-// your time with this, and check part of the solution if necessary.
-// 4. Ifyoursistherightcountry,logastringlikethis:'YoushouldliveinPortugal:)'.If
-// not, log 'Portugal does not meet your criteria :('
-// 5. Probablyyourcountrydoesnotmeetallthecriteria.Sogobackandtemporarily
-// change some variables in order to make the condition true (unless you live in Canada :D)
-
+/*
 let speaksEnglish = prompt("Enter the language");
 let lessPopulation = prompt("Enter the population");
 let isanIsland = prompt("Enter yes or no");
@@ -174,4 +165,60 @@ if (speaksEnglish === 'english' && lessPopulation < 50 && isIsland) {
 } else {
   console.log("You should probably live somewhere else");
 }
+
+*/
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+// Coding Challenge #3
+
+let dolp1 = 97;
+let dolp2 = 112;
+let dolp3 = 105;
+let koa1 = 109;
+let koa2 = 95;
+let koa3 = 106;
+
+let avgOfDolp = (dolp1 + dolp2 + dolp3) / 3;
+let avgOfKoa = (koa1 + koa2 + koa3) / 3;
+
+console.log(avgOfDolp);
+console.log(avgOfKoa);
+
+if (avgOfDolp === avgOfKoa && avgOfDolp > 100 && avgOfKoa > 100) {
+  console.log("It's a draw");
+} else if (avgOfDolp > avgOfKoa && avgOfDolp > 100) {
+  console.log("Dolphins win");
+} else if (avgOfKoa > avgOfDolp && avgOfKoa > 100) {
+  console.log("Koalas win");
+} else {
+  console.log("No one wins");
+}
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+// LECTURE: The switch Statement
+
+const languages = "englkannadaish";
+
+switch (languages) {
+  case "mandarin":
+  case "chinese":
+    console.log("MOST number of native speakers!");
+    break;
+  case "spanish":
+    console.log("2nd place in number of native speakers");
+    break;
+  case "english":
+    console.log("3rd place in number of native speakers");
+    break;
+  case "hindi":
+    console.log("4th place in number of native speakers");
+    break;
+  case "arabic":
+    console.log("5th place in number of native speakers");
+    break;
+  default:
+    console.log("Great");
+}
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
 
