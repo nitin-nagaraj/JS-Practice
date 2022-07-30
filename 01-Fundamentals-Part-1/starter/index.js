@@ -3,7 +3,6 @@
 let country = "india";
 let continent = "asia";
 let population = 10000000000;
-population>=10000000000 ? console.log("Wowwwwwwww") : console.log("Oops");
 
 console.log(
   "Population of " +
@@ -221,4 +220,17 @@ switch (languages) {
 }
 
 // //  //// //  //// //  //// //  //// //  //// //  //// //  //
+// LECTURE: The Conditional (Ternary) Operator
+population >= 100000000 ? console.log("Wowwwwwwww") : console.log("Oops");
 
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+// Coding Challenge #4
+let bill = 100;
+
+let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+let finalBill = bill + tip
+console.log(
+  `Bill amount of ${bill} with a tip of ${tip}, total value of Bill amount is ${finalBill}`
+);
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
