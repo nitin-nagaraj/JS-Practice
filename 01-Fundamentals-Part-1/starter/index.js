@@ -110,18 +110,68 @@ if (bmiMark < bmiJohn) {
 
 // //  //// //  //// //  //// //  //// //  //// //  //// //  //
 // LECTURE: Type Conversion and Coercion
-console.log('9' - '5');
-console.log('19' - '13' + 17);
-'123' < 57;
-console.log(5 + 6 + '4' + 9 - 4 - 2);
-
+console.log("9" - "5");
+console.log("19" - "13" + 17);
+"123" < 57;
+console.log(5 + 6 + "4" + 9 - 4 - 2);
 
 const year = "2020.0000";
-console.log(year)
-const year2 = Number(year * 4)
-console.log(year2/year);
+console.log(year);
+const year2 = Number(year * 4);
+console.log(year2 / year);
 
 // //  //// //  //// //  //// //  //// //  //// //  //// //  //
 
 // LECTURE: Equality Operators: == vs. ===
+
+// // let numNeighbours = prompt('How many neighbour countries does your country have?');
+
+// // console.log(numNeighbours);
+// // console.log(typeof numNeighbours)
+// // parseInt(numNeighbours)
+// // console.log(typeof numNeighbours)
+
+// if (numNeighbours === 1){
+//   console.log("Only1border!")
+// } else if (numNeighbours > 1){
+//   console.log("Morethan1border")
+// } else {
+//   console.log("Noborders")
+// }
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+
+let age = 32;
+
+if (age !== 32) {
+  console.log("True");
+} else if (age >= 20 && age < 30) {
+  console.log("Age is greater than equal 20 and less than 30");
+} else if (age >= 20 || age < 40) {
+  console.log("age more than 30");
+}
+
+// //  //// //  //// //  //// //  //// //  //// //  //// //  //
+// LECTURE: Logical Operators
+
+// Let'ssaySarahislookingforanewcountrytolivein.Shewantstoliveina
+// country that speaks english, has less than 50 million people and is not an
+// island.
+// 3. WriteanifstatementtohelpSarahfigureoutifyourcountryisrightforher.
+// You will need to write a condition that accounts for all of Sarah's criteria. Take
+// your time with this, and check part of the solution if necessary.
+// 4. Ifyoursistherightcountry,logastringlikethis:'YoushouldliveinPortugal:)'.If
+// not, log 'Portugal does not meet your criteria :('
+// 5. Probablyyourcountrydoesnotmeetallthecriteria.Sogobackandtemporarily
+// change some variables in order to make the condition true (unless you live in Canada :D)
+
+let speaksEnglish = prompt("Enter the language");
+let lessPopulation = prompt("Enter the population");
+let isanIsland = prompt("Enter yes or no");
+
+if (speaksEnglish === 'english' && lessPopulation < 50 && isIsland) {
+  console.log("You should live in Scotland");
+} else {
+  console.log("You should probably live somewhere else");
+}
 
