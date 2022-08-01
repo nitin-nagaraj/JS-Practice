@@ -28,3 +28,8 @@ const percentPopIndia = percentageOfWorld2(10000);
 console.log(percentPopChina, percentPopIndia);
 
 //  // // // // // // // // // // // // // //
+// LECTURE: Arrow Functions
+
+function percentageOfWorld3(=>{
+    
+})
