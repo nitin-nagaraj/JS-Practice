@@ -27,13 +27,46 @@ const percentPopChina = percentageOfWorld1(100);
 const percentPopIndia = percentageOfWorld2(10000);
 console.log(percentPopChina, percentPopIndia);
 
+// Function Declaration
+const multi = multiply(5);
+
+
+function multiply(a) {
+    return a*a;
+}
+
+console.log(multi)
+
+// Function Expression
+
+
+const mul = function multiply1(b) {
+    return b*b;
+}
+
+const multi2 = mul(5);
+
+console.log(multi2)
+
+
 //  // // // // // // // // // // // // // //
 // LECTURE: Arrow Functions
 
-function percentageOfWorld3(=>{
 
-})
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
 
+console.log(percentageOfWorld3(1000000));
 
+const additiong = (a , b ,c) => {
+    const k = a + b;
+    const d = k*k;
+    return d;
+}
+
+const bbb = additiong(1,2,3)
+console.log(bbb)
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Functions Calling Other Functions
 
 
