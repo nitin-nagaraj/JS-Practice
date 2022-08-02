@@ -110,9 +110,82 @@ checkWinner(576, 111);
 const populations = [123123, 3464532, 98786734];
 console.log(populations);
 
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+];
+console.log(percentages);
 
-const percentages = [percentageOfWorld1(populations[0]),percentageOfWorld1(populations[1]),percentageOfWorld1(populations[2])];
-console.log(percentages)
+const newArraysss = ["hello", 1, 7, "Bye", percentages];
+console.log(newArraysss);
 
 //  // // // // // // // // // // // // // //
 // LECTURE: Basic Array Operations (Methods)
+
+const neighbours = ["Pakistan", "China", "Nepal"];
+console.log(neighbours);
+neighbours.push("Bhutan");
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+neighbours.push("SriLanka");
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not an asian country");
+}
+
+const position = neighbours.indexOf("Pakistan");
+console.log(position);
+
+neighbours.splice(position, 1, "Nepalis");
+console.log(neighbours);
+
+//  // // // // // // // // // // // // // //
+// Coding Challenge #2
+
+function calcTip(bill) {
+  let tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+  return tip;
+}
+
+const bill = [125, 555, 44];
+console.log(`Bill array is`, bill);
+const tip = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
+console.log(`Tip array is`, tip);
+
+const total = [bill[0] + tip[0], bill[1] + tip[1], bill[2] + tip[2]];
+console.log(`Total bill array is`, total);
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Introduction to Objects
+
+const myCountry = {
+  country: "India",
+  capital: "Delhi",
+  language: "Kannada",
+  population: 1300000000000,
+  neighbours: ["Pakistan", "Nepal", "China"],
+};
+
+console.log(myCountry);
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Dot vs. Bracket Notation
+
+console.log(`${myCountry.country} has a the capital city ${myCountry.capital} and has a population of ${myCountry.population}`);
+console.log(`${myCountry.country} neighbours are ${myCountry.neighbours[0]}, ${myCountry.neighbours[1]}, and ${myCountry.neighbours[2]}`)
+
+myCountry.population += 500;
+console.log(myCountry.population)
+myCountry['population'] -= 500;
+console.log(myCountry.population)
+
+myCountry.state = 'Karnataka';
+console.log(myCountry);
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Object Methods
