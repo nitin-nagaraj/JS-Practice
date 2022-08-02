@@ -172,8 +172,13 @@ const myCountry = {
 
   describe: function () {
     console.log(
-      `${this.country} has the capital city ${myCountry.capital} and has a population of ${myCountry.population}`
+      `${this.country} has the capital city ${this.capital} and has a population of ${this.population} and neighbour ${this.neighbours[0]}`
     );
+  },
+
+  chceckIsland: function () {
+    this.isIsland = this.neighbours.length > 0 ? false : true;
+    console.log(this.isIsland);
   },
 };
 
@@ -197,4 +202,125 @@ console.log(myCountry.population);
 //  // // // // // // // // // // // // // //
 // LECTURE: Object Methods
 
-console.log(myCountry.describe);
+myCountry.describe();
+myCountry.chceckIsland();
+
+//  // // // // // // // // // // // // // //
+// Coding Challenge #3
+
+const bmiMark = {
+  name: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmiValueMark = this.mass / (this.height * this.height);
+    return this.bmiValueMark;
+  },
+};
+
+console.log(bmiMark.calcBMI());
+
+const bmiJohn = {
+  name: "John Smith",
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmiValueJohn = this.mass / (this.height * this.height);
+    return this.bmiValueJohn;
+  },
+};
+console.log(bmiJohn.calcBMI());
+
+if (bmiMark.bmiValueMark > bmiJohn.bmiValueJohn) {
+  console.log(
+    `Mark's BMI of ${bmiMark.bmiValueMark} is more than John's BMI of ${bmiJohn.bmiValueJohn}`
+  );
+} else {
+  console.log(
+    `John's BMI of ${bmiJohn.bmiValueJohn} is more than Mark's BMI of ${bmiMark.bmiValueMark}`
+  );
+}
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Iteration: The for Loop
+
+let count = 50;
+for (let i = 1; i <= 50; i++) {
+  console.log(`Voter Number ${i} is currently voting`);
+}
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Looping Arrays, Breaking and Continuing
+
+const percentages2 = [];
+for (let j = 0; j < populations.length; j++) {
+  console.log(populations[j]);
+}
+
+for (let i = 0; i < populations.length; i++) {
+  const temp = percentageOfWorld1(populations[i]);
+  percentages2.push(temp);
+}
+
+for (let i = 0; i < percentages2.length; i++) {
+  console.log(percentages2[i]);
+}
+
+console.log(percentages);
+
+//  // // // // // // // // // // // // // //
+// LECTURE: Looping Backwards and Loops in Loops
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++)
+  for (let y = 0; y < listOfNeighbours[i].length; y++)
+    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+//  // // // // // // // // // // // // // //
+// LECTURE: The while Loop
+
+const percentages3 = [];
+
+let j = 0;
+while (j < populations.length) {
+  const temp1 = percentageOfWorld1(j);
+  percentages3.push(temp1);
+  j++;
+}
+console.log(percentages3);
+
+//  // // // // // // // // // // // // // //
+// Coding Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+  const temp = calcTip(bills[i]);
+  tips.push(temp);
+  totals.push(bills[i] + tips[i]);
+}
+console.log(tips);
+console.log(totals);
+
+let sum = 0;
+let average2 =0;
+function calcAverage2(arr) {
+  for (let i = 0; i < bills.length; i++) {
+    sum = bills[i] + sum;
+  }
+  average2 = sum/bills.length;
+}
+
+calcAverage2(bills);
+console.log(sum);
+console.log(average2)
