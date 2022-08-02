@@ -169,6 +169,12 @@ const myCountry = {
   language: "Kannada",
   population: 1300000000000,
   neighbours: ["Pakistan", "Nepal", "China"],
+
+  describe: function () {
+    console.log(
+      `${this.country} has the capital city ${myCountry.capital} and has a population of ${myCountry.population}`
+    );
+  },
 };
 
 console.log(myCountry);
@@ -176,16 +182,19 @@ console.log(myCountry);
 //  // // // // // // // // // // // // // //
 // LECTURE: Dot vs. Bracket Notation
 
-console.log(`${myCountry.country} has a the capital city ${myCountry.capital} and has a population of ${myCountry.population}`);
-console.log(`${myCountry.country} neighbours are ${myCountry.neighbours[0]}, ${myCountry.neighbours[1]}, and ${myCountry.neighbours[2]}`)
+console.log(
+  `${myCountry.country} has a the capital city ${myCountry.capital} and has a population of ${myCountry.population}`
+);
+console.log(
+  `${myCountry.country} neighbours are ${myCountry.neighbours[0]}, ${myCountry.neighbours[1]}, and ${myCountry.neighbours[2]}`
+);
 
 myCountry.population += 500;
-console.log(myCountry.population)
-myCountry['population'] -= 500;
-console.log(myCountry.population)
-
-myCountry.state = 'Karnataka';
-console.log(myCountry);
+console.log(myCountry.population);
+myCountry["population"] -= 500;
+console.log(myCountry.population);
 
 //  // // // // // // // // // // // // // //
 // LECTURE: Object Methods
+
+console.log(myCountry.describe);
