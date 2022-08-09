@@ -324,3 +324,7 @@ function calcAverage2(arr) {
 calcAverage2(bills);
 console.log(sum);
 console.log(average2)
+
+// calcAverage2(bills);
+// console.log(sum);
+// console.log(average2)
