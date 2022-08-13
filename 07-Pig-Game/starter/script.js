@@ -10,6 +10,7 @@ const buttonRollDice = document.querySelector('.btn--roll');
 const buttonHold = document.querySelector('.btn--hold');
 
 let currentScore = 0;
+let activePlayer = 0;
 
 score0Element.textContent = 0;
 score1Element.textContent = 0;
@@ -30,4 +31,5 @@ const diceRoll = function () {
   }
 };
 
+buttonRollDice.addEventListener('click', diceRoll);
 buttonRollDice.addEventListener('click', diceRoll);
