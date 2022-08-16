@@ -34,3 +34,4 @@ const diceRoll = function () {
 buttonRollDice.addEventListener('click', diceRoll);
 buttonRollDice.addEventListener('click', diceRoll);
 buttonRollDice.addEventListener('click', diceRoll);
+buttonRollDice.addEventListener('click', diceRoll);
