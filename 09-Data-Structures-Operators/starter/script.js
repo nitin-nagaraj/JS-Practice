@@ -59,5 +59,5 @@ console.log(arr2);
 const newMenu = [...restaurant.starterMenu,...restaurant.mainMenu]
 console.log(newMenu)
 
-
+parseInt
 
